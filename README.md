@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/odhyp/flask-tailwindcss-starter">
-    <img src="static/favicon.svg" alt="Logo" width="80" height="80" style="filter: invert(1)">
+    <img src="static/logo.svg" alt="Logo" width="auto" height="120">
   </a>
 
 <h3 align="center">Flask TailwindCSS Starter</h3>
