@@ -1,7 +1,7 @@
 {
-  "name": "flask-tailwindcss-vercel",
+  "name": "flask-tailwindcss-starter",
   "version": "1.0.0",
-  "description": "A starter project using Flask, TailwindCSS, and Vercel",
+  "description": "A starter project using Flask and TailwindCSS. Ready to deploy in Vercel!",
   "main": "app.py",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/odhyp/flask-tailwindcss-vercel.git"
+    "url": "git+https://github.com/odhyp/flask-tailwindcss-starter.git"
   },
   "author": "Odhy Pradhana",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/odhyp/flask-tailwindcss-vercel/issues"
+    "url": "https://github.com/odhyp/flask-tailwindcss-starter/issues"
   },
-  "homepage": "https://github.com/odhyp/flask-tailwindcss-vercel#readme",
+  "homepage": "https://github.com/odhyp/flask-tailwindcss-starter#readme",
   "dependencies": {
     "tailwindcss": "^3.4.17",
     "@tailwindcss/aspect-ratio": "^0.x",
