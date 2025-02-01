@@ -17,7 +17,7 @@
 <h3 align="center">Flask TailwindCSS Starter</h3>
 
   <p align="center">
-    A starter project using Flask and TailwindCSS.
+    A starter project using Flask and TailwindCSS v4.0
     <br />
     Ready to deploy in Vercel 🚀
     <br />
@@ -37,7 +37,7 @@
 
 [![Product](static/img/product.png)](image-url-here)
 
-This project provides a boilerplate for building modern web applications with **Flask** and **TailwindCSS**. It simplifies the process of setting up a development environment and deploying to platforms like **Vercel**.
+This project provides a boilerplate for building modern web applications with **Flask** and **TailwindCSS v4.0**. It simplifies the process of setting up a development environment and deploying to platforms like **Vercel**.
 
 ### Built With
 
@@ -94,7 +94,7 @@ Ensure you have the following installed:
 5. Run the Flask development server
 
    ```bash
-   flask run
+   flask run --debug
    ```
 
 6. In a separate terminal, watch for changes to automatically rebuild TailwindCSS
