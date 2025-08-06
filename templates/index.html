@@ -1,38 +1,242 @@
 {% extends "base.html" %}
 
-<!-- INDEX -->
+<!-- Index Page -->
 {% block content %}
-<main
-  class="flex h-dvh w-full items-center justify-center bg-neutral-100 sm:h-screen"
->
-  <div
-    class="mx-auto flex w-full max-w-prose flex-col items-center gap-y-8 text-center"
-  >
-    <h1 class="sample text-4xl font-bold">Welcome!</h1>
-    <h2 class="text-lg font-medium">
-      This is a starter project using Flask and TailwindCSS v4.0<br />Ready to
-      deploy in Vercel!
-    </h2>
-    <div>
-      <!-- GITHUB REPOSITORY -->
-      <a
-        class="border-opacity-0 hover:border-opacity-100 flex items-center gap-x-2 border-b-2 border-b-zinc-300 p-1"
-        href="https://github.com/odhyp/flask-tailwindcss-starter"
-      >
-        <svg
-          class="size-5"
-          role="img"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <title>GitHub</title>
-          <path
-            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-          />
-        </svg>
-        View Repository
-      </a>
+<body class="min-h-screen text-gray-900">
+  <div class="gradient-bg relative min-h-screen overflow-hidden">
+    <!-- Floating Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Hero Section -->
+    <div
+      class="relative z-10 flex min-h-screen items-center justify-center px-4"
+    >
+      <div class="mx-auto max-w-5xl text-center">
+        <!-- Main Content -->
+        <div class="space-y-8">
+          <h1
+            class="animate-fade-in mb-4 text-6xl font-light tracking-tight text-white drop-shadow-lg md:text-9xl"
+          >
+            Flask
+            <span
+              class="block bg-gradient-to-r from-white to-emerald-200/80 bg-clip-text font-bold text-transparent"
+              >TailwindCSS</span
+            >
+            Starter
+          </h1>
+
+          <p
+            class="animate-fade-in-delay mx-auto mb-12 max-w-2xl text-lg leading-relaxed font-light text-white/90 md:text-xl"
+          >
+            Skip the setup, start building. A perfectly crafted starter
+            template.
+          </p>
+
+          <div
+            class="animate-fade-in-delay-2 flex flex-col items-center justify-center gap-3 sm:flex-row"
+          >
+            <a
+              href="https://github.com/odhyp/flask-tailwindcss-starter"
+              class="btn-primary hover-lift inline-flex items-center space-x-2 rounded-lg px-6 py-3 text-base font-medium text-white"
+            >
+              <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+              <span>View Repository</span>
+            </a>
+            <a
+              href="https://github.com/new?template_name=flask-tailwindcss-starter&template_owner=odhyp"
+              class="btn-secondary hover-lift inline-flex items-center space-x-2 rounded-lg px-6 py-3 text-base font-medium"
+            >
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                ></path>
+              </svg>
+              <span>Use Template</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</main>
+
+  <!-- Features Section -->
+  <div class="bg-gray-50 px-4 py-32">
+    <div class="mx-auto max-w-6xl">
+      <h2
+        class="mb-16 text-center text-4xl font-bold text-gray-900 md:text-5xl"
+      >
+        Why Choose This <span class="text-gradient">Starter?</span>
+      </h2>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Feature 1 -->
+        <div class="glass-card hover-lift rounded-2xl p-8 text-center">
+          <div
+            class="feature-icon mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl"
+          >
+            <svg
+              class="h-8 w-8 text-gray-700"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="mb-4 text-2xl font-semibold text-gray-900">
+            Lightning Fast
+          </h3>
+          <p class="leading-relaxed text-gray-600">
+            Pre-configured with optimized build processes and development tools.
+            Get from idea to deployment in minutes, not hours.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="glass-card hover-lift rounded-2xl p-8 text-center">
+          <div
+            class="feature-icon mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl"
+          >
+            <svg
+              class="h-8 w-8 text-gray-700"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="mb-4 text-2xl font-semibold text-gray-900">
+            Modern Design
+          </h3>
+          <p class="leading-relaxed text-gray-600">
+            Built with TailwindCSS for responsive, beautiful interfaces. Every
+            component is crafted with modern design principles in mind.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="glass-card hover-lift rounded-2xl p-8 text-center">
+          <div
+            class="feature-icon mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl"
+          >
+            <svg
+              class="h-8 w-8 text-gray-700"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="mb-4 text-2xl font-semibold text-gray-900">
+            Production Ready
+          </h3>
+          <p class="leading-relaxed text-gray-600">
+            Includes best practices, security configurations, and deployment
+            scripts. Scale from prototype to production seamlessly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Section -->
+  <div class="section-dark px-4 py-32">
+    <div class="mx-auto max-w-4xl text-center">
+      <div class="glass-card rounded-3xl p-12">
+        <h2 class="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
+          Ready to Build Something Amazing?
+        </h2>
+        <p class="mb-8 text-xl leading-relaxed text-gray-600">
+          Use this starter template to kickstart your Flask projects. <br />
+          Stop configuring, start creating.
+        </p>
+        <div
+          class="flex flex-col items-center justify-center gap-4 sm:flex-row"
+        >
+          <a
+            href="https://github.com/new?template_name=flask-tailwindcss-starter&template_owner=odhyp"
+            class="btn-primary hover-lift inline-flex items-center space-x-2 rounded-full px-10 py-5 text-xl font-semibold text-white"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              ></path>
+            </svg>
+            <span>Get Started Now</span>
+          </a>
+          <a
+            href="https://github.com/odhyp/flask-tailwindcss-starter"
+            class="btn-secondary hover-lift inline-flex items-center space-x-2 rounded-full border border-neutral-300 px-10 py-5 text-xl font-semibold"
+          >
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span>Star on GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-200 bg-white px-4 py-8">
+    <div class="mx-auto max-w-6xl text-center">
+      <p class="text-gray-500">
+        Flask TailwindCSS Starter - Built for developers, by developers.
+      </p>
+    </div>
+  </footer>
+</body>
+
 {% endblock %}
